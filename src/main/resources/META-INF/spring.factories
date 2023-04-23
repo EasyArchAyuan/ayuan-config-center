@@ -1,0 +1,4 @@
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+com.ayuan.configcenterclient.spring.ConfigCenterBootstrapConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.ayuan.configcenterclient.spring.ConfigCenterAutoConfiguration
