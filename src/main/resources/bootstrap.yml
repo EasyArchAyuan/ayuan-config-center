@@ -3,4 +3,4 @@ spring:
     ayuan:
       config:
         server-address: localhost:8899 #配置中心的地址
-        file-id: 79765c73-c1ef-4ea2-ba77-5d27a64c4685 #配置文件的id
+        file-id: 155b685d-f00e-4320-910f-0719a8cb6ac0 #配置文件的id

@@ -2,7 +2,6 @@ package com.ayuan.configcenterclient.spring;
 
 import com.ayuan.configcenterclient.client.ConfigService;
 import com.ayuan.configcenterclient.client.pojo.ConfigFile;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.env.PropertySourceLoader;
 import org.springframework.cloud.bootstrap.config.PropertySourceLocator;
 import org.springframework.core.env.CompositePropertySource;
@@ -12,6 +11,7 @@ import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.support.SpringFactoriesLoader;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
@@ -28,9 +28,9 @@ public class ConfigCenterPropertySourceLocator implements PropertySourceLocator 
 
     private final List<PropertySourceLoader> propertySourceLoaderList = SpringFactoriesLoader.loadFactories(PropertySourceLoader.class, Thread.currentThread().getContextClassLoader());
 
-    @Autowired
+    @Resource
     private ConfigService configService;
-    @Autowired
+    @Resource
     private ConfigCenterProperties configCenterProperties;
 
 
