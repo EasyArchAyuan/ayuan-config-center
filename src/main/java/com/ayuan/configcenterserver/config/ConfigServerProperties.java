@@ -1,7 +1,6 @@
 package com.ayuan.configcenterserver.config;
 
 import lombok.Data;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
@@ -16,5 +15,5 @@ public class ConfigServerProperties {
     /**
      * 存储类型 ，memory:基于内存存储 file:文件系统存储
      */
-    private String storeType = "file";
+    private String storeType = "memory";
 }

@@ -1,7 +1,6 @@
 package com.ayuan.configcenterserver.strage;
 
 import com.ayuan.configcenterserver.pojo.ConfigFile;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
